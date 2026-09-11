@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANIMAL CARD BRAWL - Free Download</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Fredoka', Arial, sans-serif;
+    background: linear-gradient(160deg, #1a2f1a 0%, #0d1a26 60%, #1a0f2e 100%);
+    color: #fff; min-height: 100vh; overflow-x: hidden;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; text-align: center; }
+  .cover {
+    width: 200px; height: 200px; border-radius: 44px; margin: 20px auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,.6), 0 0 80px rgba(255,200,60,.15);
+    display: block; animation: bob 3.5s ease-in-out infinite;
+  }
+  @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
+  h1 {
+    font-size: clamp(34px, 7vw, 64px); letter-spacing: 2px; font-weight: 900;
+    background: linear-gradient(90deg, #ffd94d, #ff9a3d, #ff5d8f);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 4px 30px rgba(255,160,60,.25);
+  }
+  .tag { color: #b8d4b8; font-size: clamp(15px, 2.5vw, 20px); margin: 14px 0 34px; line-height: 1.7; }
+  .cards { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+  .card {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+    border-radius: 20px; padding: 28px 30px; width: 320px; backdrop-filter: blur(6px);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.5); }
+  .card .os { font-size: 40px; margin-bottom: 10px; }
+  .card h2 { font-size: 22px; margin-bottom: 6px; }
+  .card .size { color: #9fb8a0; font-size: 14px; margin-bottom: 18px; }
+  .dl {
+    display: inline-block; padding: 14px 34px; border-radius: 999px; font-size: 18px; font-weight: 700;
+    text-decoration: none; color: #1a1305;
+    background: linear-gradient(90deg, #ffd94d, #ffb03d);
+    box-shadow: 0 6px 20px rgba(255,180,60,.4); transition: transform .15s;
+  }
+  .dl:hover { transform: scale(1.06); }
+  .feat { text-align: left; max-width: 640px; margin: 0 auto; color: #cfe0cf; font-size: 16px; line-height: 2; }
+  .feat b { color: #ffd94d; }
+  .note { margin-top: 34px; color: #7e967e; font-size: 13px; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="cover" id="coverImg" alt="ANIMAL CARD BRAWL">
+  <h1>ANIMAL CARD BRAWL</h1>
+  <p class="tag">A cute &amp; wild animal card battler!<br>
+  Counter the food chain, stack TRIPLES, and brawl through 24 adventure stages. 🐯🐭🐘</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="os">💻</div>
+      <h2>Windows PC</h2>
+      <div class="size">214 MB · No install needed · 64-bit</div>
+      <a class="dl" id="dl-pc" href="https://github.com/2602504216a-hue/animal-card-brawl/releases/download/v1.0/animal-card-brawl-pc.zip">⬇ DOWNLOAD</a>
+    </div>
+    <div class="card">
+      <div class="os">📱</div>
+      <h2>Android</h2>
+      <div class="size">204 MB · APK · Android 8+</div>
+      <a class="dl" id="dl-apk" href="https://github.com/2602504216a-hue/animal-card-brawl/releases/download/v1.0/animal-card-brawl-android.apk">⬇ DOWNLOAD</a>
+    </div>
+  </div>
+
+  <div class="feat">
+    <b>⚔️ CARD BATTLE</b> — Secret plays, food-chain counters, triple comebacks. First to 20 points wins!<br>
+    <b>🗺️ ADVENTURE MODE</b> — Real-time card combat, 3-hero squad, 24 stages, 4 epic bosses.<br>
+    <b>🎁 CARD SHOP</b> — Rip packs, chase Flash cards, unlock scenes &amp; card backs.<br>
+    <b>🌍 100% FREE</b> — No ads, no accounts, just play.
+  </div>
+
+  <p class="note">Windows: unzip and run the .exe (click "More info → Run anyway" if SmartScreen shows).<br>
+  Android: open the APK on your phone and allow install from this source.</p>
+</div>
+<script src="cover.js"></script>
+<script>document.getElementById("coverImg").src = "data:image/jpeg;base64," + window.COVER_B64;</script>
+</body>
+</html>
